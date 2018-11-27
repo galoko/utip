@@ -123,17 +123,13 @@ function handlePointInput(isInputPresent, x, y) {
         drawLineWithActiveBrush(lastMousePosition, currentMousePosition);
         
         lastMousePosition = currentMousePosition;
-        
-        console.log(x + ", " + y);
     }
     else
         lastMousePosition = undefined;  
 }
 
 function handleMouseInput(eventName, e) {
-    
-    console.log("mouse event: " + eventName);
-    
+        
     const isLMBPresed = (e.which == 1);
 
     handlePointInput(isLMBPresed, e.pageX, e.pageY);
