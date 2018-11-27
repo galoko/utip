@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UTIP Test</title>
+        <style>
+            .standart_button {width: 50px; height: 20px}
+            .active_button {width: 63px; height: 25px}
+        </style>
+    </head>
+    <body>
+        <div align="center">
+            <canvas id="scene" width="300" height="150" style="border:1px solid #000000;">
+            </canvas>
+            <br>
+            <div id="colors">
+                <button type="button" class="standart_button" style="background-color:#FF0000"></button>
+                <button type="button" class="standart_button" style="background-color:#00FF00"></button>
+                <button type="button" class="standart_button" style="background-color:#0000FF"></button>
+                <button type="button" class="standart_button" style="background-color:#FFFFFF"></button>
+                <button type="button" class="standart_button" style="background-color:#000000"></button>
+            </div>
+            <br>
+            <div id="brush_sizes">
+                <button class="standart_button" type="button">1</button>
+                <button class="standart_button" type="button">5</button>
+                <button class="standart_button" type="button">10</button>
+            </div>  
+            <br>    
+            <button type="button" style="height: 25px" onclick="clearScene()">Очистить</button>
+            <br>
+            <br>
+            <button type="button" style="height: 25px" onclick="saveScene()">Сохранить</button>
+        </div>
+    </body>
+    <script src="main.js">
+    </script>
+</html>
