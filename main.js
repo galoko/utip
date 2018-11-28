@@ -194,7 +194,6 @@ function loadScene() {
     
         const image = new Image();
         image.onload = () => {
-            clearScene();
             scene.drawImage(image, 0, 0);
             console.info("Scene was loaded.");
         };
